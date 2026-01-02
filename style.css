@@ -43,6 +43,8 @@
     border-color: black;
     border-width: 7px;
     border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .ScoreButtonsContainer {
@@ -78,3 +80,4 @@
     display: block;
 
 }
+
