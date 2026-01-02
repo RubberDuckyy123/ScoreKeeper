@@ -59,7 +59,7 @@ Panels.forEach(el => {
             return
         }
         const height = window.innerHeight
-        if (event.clientY <= (SwipeStartY - (window.innerHeight / 6))) {
+        if (event.clientY <= (SwipeStartY - (window.innerHeight / 8))) {
             if (event.target.classList.contains("Score") || event.target.classList.contains("CenterText")) {
                 if (LeftSideSwipe) {
                     Team1Score.textContent = Number(Team1Score.textContent) + 1
@@ -67,7 +67,7 @@ Panels.forEach(el => {
                     Team2Score.textContent = Number(Team2Score.textContent) + 1
                 }
             }
-        } else if (event.clientY >= (SwipeStartY + (window.innerHeight / 6))) {
+        } else if (event.clientY >= (SwipeStartY + (window.innerHeight / 8))) {
             if (event.target.classList.contains("Score") || event.target.classList.contains("CenterText")) {
                 if (LeftSideSwipe) {
                     Team1Score.textContent = Number(Team1Score.textContent) - 1
@@ -78,4 +78,5 @@ Panels.forEach(el => {
         }
         SwipeStartY = null
         })
+
 }) 
