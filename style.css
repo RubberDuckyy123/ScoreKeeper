@@ -5,6 +5,7 @@
     background-color: var(--bg); /* Blue Color */
     left: var(--left); /* Decides between left and right panel */
     top: 0%;
+    touch-action: none; /* Prevents browser from interfering with pointer gestures */
 }
 
 .CenterText {
@@ -75,4 +76,5 @@
     border: none;
     background: none;
     display: block;
+
 }
