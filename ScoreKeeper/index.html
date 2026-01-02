@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Panel" id="LeftPanel" style="--bg: rgb(2.55, 173.4, 204); --left: 0%;">
+        <div class="CenterText" id="CenterText">
+            <p class="Score" id="Team1Score">0</p>
+        </div>
+        <input id="Team1Name" class="TeamName">
+        <div class="ScoreButtonsContainer" style="--left: 5%; --dir: flex-start">
+            <button class="ScoreButton" id="PlusButton1">
+                <img src="Plus.png" class="ButtonImage">
+            </button>
+            <button class="ScoreButton" id="MinusButton1">
+                <img src="Minus.png" class="ButtonImage">
+            </button>
+        </div>
+    </div>
+    <div class="Panel" id="RightPanel" style="--bg: rgb(36, 72, 150); --left: 50%;">
+        <div class="CenterText" id="CenterText2">
+            <p class="Score" id="Team2Score">0</p>
+        </div>
+        <input id="Team2Name" class="TeamName">
+        <div class="ScoreButtonsContainer" style="--left: 55%; --dir: flex-end">
+            <button class="ScoreButton" id="PlusButton2">
+                <img src="Plus.png" class="ButtonImage">
+            </button>
+            <button class="ScoreButton" id="MinusButton2">
+                <img src="Minus.png" class="ButtonImage">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

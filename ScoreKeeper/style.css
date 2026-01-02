@@ -1,0 +1,78 @@
+.Panel {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: var(--bg); /* Blue Color */
+    left: var(--left); /* Decides between left and right panel */
+    top: 0%;
+}
+
+.CenterText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%;
+}
+
+.Score {
+    font-size: clamp(5rem, 40vh, 30rem);
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.TeamName {
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: clamp(1rem, 9vh, 6rem);
+    bottom: 10%;
+    z-index: 2;
+    border-color: black;
+    border-width: 7px;
+    border-radius: 20px;
+}
+
+.ScoreButtonsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: var(--dir);
+    left: var(--left);
+    top: 40%;
+    height: clamp(5rem, 40vh, 30rem);
+    width: 40%;
+    transform: translateY(-50%);
+}
+
+.ScoreButton {
+    width: 40%;
+    min-width: 70px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-color: black;
+    border-width: 8px;
+}
+
+.ButtonImage {
+    width: 100%;
+    aspect-ratio: 1/1;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    padding: 0;
+    border: none;
+    background: none;
+    display: block;
+}
