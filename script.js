@@ -75,4 +75,7 @@ Panels.forEach(el => {
             SwipeStartY = null
         }
     })
+    el.addEventListener("pointerup", () => {
+        SwipeStartY = null
+    })
 }) 
