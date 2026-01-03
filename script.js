@@ -54,29 +54,25 @@ Panels.forEach(el => {
             }
         }
     })
-    el.addEventListener("pointerup", (event) => {
+    el.addEventListener("pointermove", (event) => {
         if (!(SwipeStartY)) {
             return
         }
         const height = window.innerHeight
         if (event.clientY <= (SwipeStartY - (window.innerHeight / 8))) {
-            if (event.target.classList.contains("Score") || event.target.classList.contains("CenterText")) {
-                if (LeftSideSwipe) {
-                    Team1Score.textContent = Number(Team1Score.textContent) + 1
-                } else {
-                    Team2Score.textContent = Number(Team2Score.textContent) + 1
-                }
+            if (LeftSideSwipe) {
+                Team1Score.textContent = Number(Team1Score.textContent) + 1
+            } else {
+                Team2Score.textContent = Number(Team2Score.textContent) + 1
             }
+            SwipeStartY = null
         } else if (event.clientY >= (SwipeStartY + (window.innerHeight / 8))) {
-            if (event.target.classList.contains("Score") || event.target.classList.contains("CenterText")) {
-                if (LeftSideSwipe) {
-                    Team1Score.textContent = Number(Team1Score.textContent) - 1
-                } else {
-                    Team2Score.textContent = Number(Team2Score.textContent) - 1
-                }
+            if (LeftSideSwipe) {
+                Team1Score.textContent = Number(Team1Score.textContent) - 1
+            } else {
+                Team2Score.textContent = Number(Team2Score.textContent) - 1
             }
+            SwipeStartY = null
         }
-        SwipeStartY = null
-        })
-
+    })
 }) 
